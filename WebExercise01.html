@@ -1,26 +1,67 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="device-width, initial-scale= 1.0">
+        <style>
+            .box {
+                background-color: lightgoldenrodyellow;
+                color: black;
+                border: 2px solid darkgreen;
+                width: 90%;
+                max-width: 10000px;
+                margin: 15px auto;
+                padding: 25px;
+                box-sizing: border-box;
+            }
+            .centered {
+                display: grid;
+                place-items: center;
+                height: calc(100vh - 400px);
+                background-color: white;
+                margin-bottom: 60px;
+            }
+            header {
+                text-align: center;
+                color: white;
+                background-image: url(images/essubackground.png);
+                border: 10px;
+                padding: 20px;   
+            }
+            footer {
+                text-align: left;
+                position: fixed;
+                background-color: darkgreen;
+                color: lightgoldenrodyellow;
+                width: 97.7%;
+                height: 60px;
+                bottom: 0; 
+                margin-top: 20px;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+        </style>
         <title>ESSU Vision & Mission</title>
         <link rel="icon" type="image/png" href="images/essulogo.png">
     </head>
     <body>
-        <div style="display: grid; place-items: center;">
-            <img src="images/essuheader.png" alt="This is a ESSU logo" style="max-width: 100%; height: auto;">
+        <header>
+                <img src="images/essuheader.png" alt="This is a ESSU logo" style="max-width: 52%; height: auto;">
+        </header> 
+        <div class="centered">
+            <div class="box"> 
+                <h1 style="font-size: 40px; font-family: Arial, sans-serif; color: darkgreen;">Vision</h1>
+                <p style="font-size: 23px; font-family: Tahoma, sans-serif;">
+                    &#x25B6; A technologically-advanced university producing professionals and competitive leaders for local and national development.
+                </p>
+                <h1 style="font-size: 40px; font-family: Arial, sans-serif; color: darkgreen;">Mission</h1>
+                <p style="font-size: 23px; font-family: Tahoma, sans-serif;">
+                    &#x25B6; To provide quality education responsive to the national and global needs focused on generating knowledge and technology that will improve the lives of the people.
+                </p>
+            </div>
         </div>
-        <hr> 
-        <br> <!-- THIS CREATE A SPACE (Line Break)-->
-        <div style="display: grid; place-items: center;">
-            <h1>Mission</h1>
-            <p>
-                A technologically-advanced university producing professionals and competitive leaders for local and national development.
-            </p>
-            <br>
-            <h1>Vision</h1>
-            <p>
-                A technologically-advanced university producing professionals and competitive leaders for local and national development.
-            </p>
-            <br>
-        </div>
+        <footer>
+            <p style="font-family: Arial, sans-serif;">&copy; Ryan James M. Nervez</p>
+        </footer> 
     </body>
 </html>
